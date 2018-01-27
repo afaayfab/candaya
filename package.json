@@ -1,0 +1,20 @@
+{
+ "name": "tts-api-rest",
+ "version": "1.0.0",
+ "description": "Nodejs API REST",
+ "main": "app.js",
+ "scripts": {
+  "dev": "cross-env NODE_ENV=development nodemon --inspect index.js",
+  "build": "cross-env NODE_ENV=production node app.js",
+  "doc": "apidoc -e node_modules/",
+  "test": "mocha ./test/base-test.js",
+  "lint": "eslint *.js --fix"
+ },
+ "dependencies": {
+  "express": "^4.13.4",
+  "mongoose": "4.11.7",
+  "nodemon": "1.11.0",
+  "chalk": "2.3.0",
+  "bluebird": "3.5.1"
+ }
+}
